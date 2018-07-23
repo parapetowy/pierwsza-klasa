@@ -13,8 +13,8 @@ Phone.prototype.printInfo = function() {
 	console.log("The phone brand is " + this.brand + ", screen size is " + this.screen + ", RAM - " + this.ram + ", memory is " + this.memory + ", color is " + this.color + " and the price is " + this.price + ".");
 }
 
-Phone.prototype.applyDiscount = function(x) {
-	this.price = this.price - x;
+Phone.prototype.applyDiscount = function(discount) {
+	this.price = this.price - discount;
 }
 
 var iPhone6S = new Phone("Apple", "4.6", "2GB", "16GB", 2250, "silver");
